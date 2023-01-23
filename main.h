@@ -31,7 +31,7 @@ int print_reversed(va_list arg);
 int ptint_rot13(va_list);
 int print_octal(va_list list);
 int print_lowercase_hex(va_list list);
-int print_uppercase_printer(va_list list);
+int print_uppercase_hex(va_list list);
 int hex_checker(int, char);
 int parse_helper(const char *format, conver_t f_list[], va_list arg_list);
 

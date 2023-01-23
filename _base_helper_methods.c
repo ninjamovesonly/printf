@@ -111,7 +111,7 @@ int print_lowercase_hex(va_list list)
 		rem_num = num % 16;
 		if (rem_num > 9)
 		{
-			rem_num = hexChecker(rem_num, 'x');
+			rem_num = hex_checker(rem_num, 'x');
 			hex_rep[len] = rem_num;
 		}
 		else
@@ -129,11 +129,11 @@ int print_lowercase_hex(va_list list)
 }
 
 /**
- * print_uppercase_printer - prints base16 in uppercase
+ * print_uppercase_hex - prints base16 in uppercase
  * @list: arguments list
  * Return: integer
  */
-int print_uppercase_printer(va_list list)
+int print_uppercase_hex(va_list list)
 {
 	unsigned int num;
 	int len;
@@ -156,7 +156,7 @@ int print_uppercase_printer(va_list list)
 		rem_num = num % 16;
 		if (rem_num > 9)
 		{
-			rem_num = hexChecker(rem_num, 'X');
+			rem_num = hex_checker(rem_num, 'X');
 			hex_rep[len] = rem_num;
 		}
 		else
